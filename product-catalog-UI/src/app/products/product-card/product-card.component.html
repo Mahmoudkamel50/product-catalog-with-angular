@@ -1,0 +1,15 @@
+<div class="item">
+    <div routerLink="{{data.id}}"> 
+        <img src="{{data.image}}" alt="">
+        <div class="body">
+            <h4> {{data.nameEn}}</h4>
+            <p> "buyingCount: " {{data.buyingCount}}</p>
+            
+        </div>
+    </div>
+
+    <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+        <button class="btn btn-secondary" (click)="add()">Add to cart</button>
+        <span>{{data.variants[0].price}}</span>
+    </div>
+</div>

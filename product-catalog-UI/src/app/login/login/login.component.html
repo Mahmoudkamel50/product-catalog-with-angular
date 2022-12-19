@@ -1,0 +1,12 @@
+
+
+<div class="container">
+    
+    <form>
+        <label>UserName:</label>
+    <input type="text" name="username" [(ngModel)]="data.userName" placeholder="enter your username">
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="data.pass" placeholder ="enter your password">
+    <input type="submit" (click)="signIn($event)" value="Sign in"> 
+    </form>
+</div>

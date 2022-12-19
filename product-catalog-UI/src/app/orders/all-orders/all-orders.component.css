@@ -1,0 +1,10 @@
+.head{
+    margin-top: 100px;
+}
+div{
+    margin-top: 40px;
+}
+.head .container{
+    padding: 20px;
+    width: 50%;
+}

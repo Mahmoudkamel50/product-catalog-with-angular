@@ -1,0 +1,15 @@
+
+
+<div class="head">
+    <div class="container" *ngFor="let order of orders">
+        <h1>Order</h1>
+        <h3>customerName : {{order.customerName}}</h3>
+        <h3>totalPrice: {{order.totalPrice}}</h3>
+        <h3>Products : </h3>
+        <div *ngFor="let productName of order.variantNames">
+            <h4>{{productName}}</h4>
+        </div>
+        <br>
+</div>
+</div>
+

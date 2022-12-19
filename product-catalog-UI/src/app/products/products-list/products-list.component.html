@@ -1,0 +1,16 @@
+
+
+<div class="my-2 w-25" >
+    <label for="">Categories: </label>
+    <select class="form-control" (change)="filterCategories($event)">
+        <option value="all" selected >All</option>
+        <option value="{{category.name}}" *ngFor="let category of categories">{{category.name}}</option>
+    </select>
+</div>
+
+
+<div class="row">
+    <div class="col-md-3 col-sm-12" *ngFor="let product of products">
+        <product-card [data]="product" (item)="addToCart($event)"></product-card> 
+    </div>
+</div>

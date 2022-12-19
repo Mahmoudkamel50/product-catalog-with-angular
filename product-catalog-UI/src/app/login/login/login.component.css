@@ -1,0 +1,13 @@
+div{
+    margin-top: 100px;
+    text-align: center;
+    width: 400px;
+}
+input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+input[type="submit"]{
+    width: 30%;
+    color: #000;
+}
