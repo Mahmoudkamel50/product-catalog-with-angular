@@ -48,14 +48,12 @@ export class ProductsListComponent implements OnInit {
     }
     else {
       this.productsService.getProductsOfCategory(value).subscribe((res: any) => {
-        console.log(this.products, res, "jjjj");
-
+        console.log(this.products, res);
         this.products = res;
       });
     }
 
   }
-
 
   addToCart(event: any) {
     if ("cart" in localStorage) {

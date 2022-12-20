@@ -8,7 +8,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ProductCardComponent {
 
  @Input() data:any = {}
- @Output() item=new EventEmitter()
+ @Output() item=new EventEmitter();
+ addButton:boolean = false;
   amount:number=1;
   constructor(){}
 
